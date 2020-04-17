@@ -1,0 +1,2448 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6DB336AB-0AE7-4971-92AD-24D6937305D4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>IllusionMagic.My.MyApplication</StartupObject>
+    <RootNamespace>IllusionMagic</RootNamespace>
+    <AssemblyName>IllusionMagic</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>IllusionMagic.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>IllusionMagic.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abacus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acorn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\address-book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\address-book--arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\address-book-blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\address-book--exclamation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\address-book--minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\address-book-open.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\address-book--pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\address-book--plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alarm-clock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alarm-clock--arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alarm-clock-blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alarm-clock--exclamation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alarm-clock--minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alarm-clock--pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alarm-clock--plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alarm-clock-select.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alarm-clock-select-remain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anchor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\android.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animal-dog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animal-monkey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animal-monkey-sulky.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animal-penguin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application-ab.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application--arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application-block.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application-blog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application-blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application-browser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application-cloud.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application-detail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application-dialog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application-dock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application-dock-090.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application-dock-180.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application-dock-270.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application-dock-tab.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application-document.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application-documents.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application--exclamation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application-export.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application-form.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application-home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application-icon-large.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application-image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application-import.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application-list.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application-medium.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application--minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application-monitor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application-network.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application--pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application-plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application--plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application-plus-black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application-plus-red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application-rename.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application-resize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application-resize-actual.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application-resize-full.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application-run.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\applications.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\applications-blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application-search-result.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application-share.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application-sidebar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application-sidebar-collapse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application-sidebar-expand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application-sidebar-list.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application-small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application-small-blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application-small-list.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application-small-list-blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application-split.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application-split-tile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application-split-vertical.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\applications-stack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application-sub.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application-table.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application-task.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application-terminal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application-text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application-text-image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application-tile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application-tile-horizontal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application-tile-vertical.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application-tree.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application-wave.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-000-medium.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-000-small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-045.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-045-medium.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-045-small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-090.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-090-medium.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-090-small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-135.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-135-medium.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-135-small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-180.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-180-medium.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-180-small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-225.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-225-medium.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-225-small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-270.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-270-medium.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-270-small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-315.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-315-medium.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-315-small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-branch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-branch-000-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-branch-090.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-branch-090-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-branch-180.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-branch-180-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-branch-270.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-branch-270-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-circle-045-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-circle-135.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-circle-135-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-circle-225.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-circle-225-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-circle-315.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-circle-315-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-circle-double.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-circle-double-135.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-continue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-continue-000-top.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-continue-090.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-continue-090-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-continue-180.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-continue-180-top.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-continue-270.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-continue-270-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-curve.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-curve-000-double.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-curve-000-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-curve-090.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-curve-090-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-curve-180.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-curve-180-double.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-curve-180-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-curve-270.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-curve-270-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-in.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-in-out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-join.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-join-090.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-join-180.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-join-270.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-merge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-merge-000-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-merge-090.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-merge-090-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-merge-180.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-merge-180-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-merge-270.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-merge-270-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-move.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-repeat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-repeat-once.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-resize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-resize-045.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-resize-090.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-resize-135.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-return.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-return-000-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-return-090.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-return-090-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-return-180.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-return-180-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-return-270.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-return-270-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-retweet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-skip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-skip-090.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-skip-180.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-skip-270.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-split.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-split-090.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-split-180.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-split-270.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-step.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-step-out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-step-over.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-stop-090.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-stop-180.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-stop-270.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-switch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-switch-090.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-switch-180.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-switch-270.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-transition.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-transition-090.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-transition-180.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-transition-270.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-turn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-turn-000-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-turn-090.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-turn-090-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-turn-180.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-turn-180-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-turn-270.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-turn-270-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asterisk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asterisk-small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asterisk-small-yellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asterisk-yellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\at-sign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\at-sign-balloon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\at-sign-document.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\at-sign-small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\auction-hammer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\auction-hammer--arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\auction-hammer--exclamation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\auction-hammer-gavel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\auction-hammer--minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\auction-hammer--pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\auction-hammer--plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baggage-cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baggage-cart-box.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baggage-cart-box-label.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\balance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\balance--arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\balance--exclamation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\balance--minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\balance--pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\balance--plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\balance-unbalance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\balloon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\balloon--arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\balloon-box.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\balloon-box-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\balloon-buzz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\balloon-buzz-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\balloon-ellipsis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\balloon--exclamation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\balloon-facebook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\balloon-facebook-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\balloon-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\balloon--minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\balloon--pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\balloon--plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\balloon-prohibition.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\balloon-quotation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\balloons.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\balloons-box.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\balloons-facebook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\balloons-facebook-box.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\balloon-small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\balloon-small-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\balloon-smiley.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\balloon-smiley-sad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\balloon-sound.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\balloons-twitter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\balloons-twitter-box.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\balloons-white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\balloon-twitter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\balloon-twitter-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\balloon-twitter-retweet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\balloon-white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\balloon-white-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bamboo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bamboos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bandaid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bandaid--arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bandaid--exclamation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bandaid--minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bandaid--pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bandaid--plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bandaid-small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bank.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bank--arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bank--exclamation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bank--minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bank--pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bank--plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barcode.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barcode-2d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\battery.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\battery--arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\battery-charge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\battery-empty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\battery--exclamation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\battery-full.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\battery-low.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\battery--minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\battery--pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\battery-plug.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\battery--plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bauble.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beaker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beaker--arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beaker-empty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beaker--exclamation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beaker--minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beaker--pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beaker--plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bean.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bean--arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bean--exclamation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bean-green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bean--minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bean--pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bean--plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beans.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bean-small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bean-small-green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bell.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bell--arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bell--exclamation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bell--minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bell--pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bell--plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bell-small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\billboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\billboard-empty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\billboard-red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bin--arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bin--exclamation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bin-full.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bin-metal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bin-metal-full.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bin--minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\binocular.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\binocular--arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\binocular--exclamation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\binocular--minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\binocular--pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\binocular--plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\binocular-small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bin--pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bin--plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\block.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\block--arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\block--exclamation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\block--minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\block--pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\block--plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\block-share.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\block-small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blog--arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blog-blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blog--exclamation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blog-medium.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blog--minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blog--pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blog--plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blog-posterous.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blogs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blogs-stack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blog-tumblr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-access.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document--arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-attribute.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-attribute-b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-attribute-c.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-attribute-d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-attribute-e.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-attribute-f.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-attribute-g.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-attribute-h.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-attribute-i.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-attribute-j.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-attribute-k.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-attribute-l.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-attribute-m.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-attribute-n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-attribute-o.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-attribute-p.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-attribute-q.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-attribute-r.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-attribute-s.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-attribute-t.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-attribute-u.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-attribute-v.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-attribute-w.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-attribute-x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-attribute-y.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-attribute-z.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-binary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-block.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-bookmark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-break.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-broken.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-clock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-code.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-convert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-epub.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-epub-text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-excel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-excel-csv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-excel-table.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document--exclamation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-export.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-film.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-flash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-flash-movie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-globe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-hf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-hf-delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-hf-delete-footer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-hf-insert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-hf-insert-footer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-hf-select.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-hf-select-footer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-horizontal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-horizontal-text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-illustrator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-import.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-insert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-invoice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-list.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-medium.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document--minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-mobi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-mobi-text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-music.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-music-playlist.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-node.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-number.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-number-0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-number-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-number-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-number-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-number-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-number-5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-number-6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-number-7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-number-8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-number-9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-office.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-office-text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-outlook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-page.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-page-last.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-page-next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-page-previous.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-pdf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-pdf-text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document--pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-photoshop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-photoshop-image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-php.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document--plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-powerpoint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-rename.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-resize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-resize-actual.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-documents.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-search-result.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-share.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-shred.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-small-list.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-smiley.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-smiley-sad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-snippet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-documents-stack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-stamp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-stand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-documents-text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-sticky-note.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-sub.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-table.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-tag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-task.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-template.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-tex.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-text-image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-tree.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-view.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-view-book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-view-thumbnail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-visual-studio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-word.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-word-text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-word-tick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-xaml.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-document-zipper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-folder--arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-folder-bookmark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-folder-broken.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-folder--exclamation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-folder-export.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-folder-horizontal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-folder-horizontal-open.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-folder-import.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-folder-medium.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-folder--minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-folder-network.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-folder-network-horizontal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-folder-network-horizontal-open.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-folder-open.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-folder-open-document.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-folder-open-document-music.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-folder-open-document-music-playlist.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-folder-open-document-text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-folder-open-feed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-folder-open-film.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-folder-open-image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-folder-open-slide.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-folder-open-table.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-folder--pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-folder--plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-folder-rename.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-folders.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-folder-search-result.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-folder-share.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-folder-shred.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-folder-small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-folder-small-horizontal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-folder-smiley.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-folder-smiley-sad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-folders-stack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-folder-stamp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-folder-stand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-folder-sticky-note.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-folder-tree.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-folder-zipper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blueprint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blueprint--arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blueprint--exclamation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blueprint-horizontal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blueprint-medium.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blueprint--minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blueprint--pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blueprint--plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blueprints.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bluetooth.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\board-game.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\board-game-go.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bomb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book--arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book-bookmark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book-brown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book--exclamation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bookmark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bookmark--arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bookmark--exclamation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bookmark-export.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bookmark-import.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bookmark--minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bookmark--pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bookmark--plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bookmarks.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bookmark-small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book--minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book-open.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book-open-bookmark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book-open-list.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book-open-next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book-open-previous.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book-open-text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book-open-text-image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book--pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book--plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book-question.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\books.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\books-brown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book-small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book-small-brown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\books-stack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\border.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\border-all.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\border-bottom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\border-bottom-double.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\border-bottom-thick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\border-color.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\border-dash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\border-down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\border-draw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\border-horizontal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\border-horizontal-all.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\border-inside.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\border-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\border-outside.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\border-outside-thick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\border-right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\border-top.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\border-top-bottom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\border-top-bottom-double.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\border-top-bottom-thick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\border-up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\border-vertical.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\border-vertical-all.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\border-weight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box--arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box-document.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box--exclamation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box-label.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box-medium.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box--minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box--pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box--plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box-resize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box-resize-actual.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box-search-result.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box-share.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box-small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box-zipper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brain--arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brain-empty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brain--exclamation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brain--minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brain--pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brain--plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bread.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\breads.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\briefcase.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\briefcase--arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\briefcase--exclamation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\briefcase--minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\briefcase--pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\briefcase--plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\briefcase-small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brightness.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brightness-control.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brightness-control-up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brightness-low.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brightness-small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brightness-small-low.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\broom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\broom--arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\broom-code.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\broom--exclamation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\broom--minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\broom--pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\broom--plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bug.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bug--arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bug--exclamation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bug--minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bug--pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bug--plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\building.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\building--arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\building--exclamation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\building-hedge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\building-low.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\building-medium.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\building--minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\building-network.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\building-old.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\building--pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\building--plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\building-small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\burn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\burn--arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\burn--exclamation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\burn--minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\burn--pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\burn--plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\burn-small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cactus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cake.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cake--arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cake--exclamation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cake--minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cake--pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cake-plain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cake--plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calculator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calculator--arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calculator--exclamation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calculator-gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calculator--minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calculator--pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calculator--plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calculator-scientific.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar--arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar-blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar-day.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar-delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar-empty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar--exclamation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar-export.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar-import.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar-insert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar-list.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar-medium.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar--minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar-month.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar-next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar--pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar--plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar-previous.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar-property.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar-relation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar-search-result.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar-select.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar-select-days.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar-select-days-span.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar-select-month.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar-select-week.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar-share.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar-small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar-small-month.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar-task.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camcorder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camcorder--arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camcorder--exclamation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camcorder-image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camcorder--minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camcorder--pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camcorder--plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camera--arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camera-black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camera--exclamation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camera-lens.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camera--minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camera--pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camera--plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camera-small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camera-small-black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\candle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\candle-white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\candy-cane.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car--arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\card.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\card-address.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\card--arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\card--exclamation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\card-export.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\card-import.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\card-medium.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\card--minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\card--pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\card--plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cards.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cards-address.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cards-bind.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cards-bind-address.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\card-small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cards-stack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car--exclamation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car--minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car--pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car--plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car-red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car-taxi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cassette.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cassette--arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cassette--exclamation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cassette-label.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cassette--minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cassette--pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cassette--plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cassette-small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\louise pentacle.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

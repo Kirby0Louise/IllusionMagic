@@ -1,0 +1,11 @@
+C:\Users\darkm\source\repos\IllusionMagic\IllusionMagic\bin\Debug\IllusionMagic.exe.config
+C:\Users\darkm\source\repos\IllusionMagic\IllusionMagic\bin\Debug\IllusionMagic.exe
+C:\Users\darkm\source\repos\IllusionMagic\IllusionMagic\bin\Debug\IllusionMagic.pdb
+C:\Users\darkm\source\repos\IllusionMagic\IllusionMagic\bin\Debug\IllusionMagic.xml
+C:\Users\darkm\source\repos\IllusionMagic\IllusionMagic\obj\Debug\IllusionMagic.vbprojAssemblyReference.cache
+C:\Users\darkm\source\repos\IllusionMagic\IllusionMagic\obj\Debug\IllusionMagic.frmMain.resources
+C:\Users\darkm\source\repos\IllusionMagic\IllusionMagic\obj\Debug\IllusionMagic.Resources.resources
+C:\Users\darkm\source\repos\IllusionMagic\IllusionMagic\obj\Debug\IllusionMagic.vbproj.GenerateResource.cache
+C:\Users\darkm\source\repos\IllusionMagic\IllusionMagic\obj\Debug\IllusionMagic.exe
+C:\Users\darkm\source\repos\IllusionMagic\IllusionMagic\obj\Debug\IllusionMagic.xml
+C:\Users\darkm\source\repos\IllusionMagic\IllusionMagic\obj\Debug\IllusionMagic.pdb
