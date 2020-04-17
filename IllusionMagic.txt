@@ -1,0 +1,18 @@
+IllusionMagic Project File Type Documentation v1.0 [01]
+
+Hex Address - Length - Description
+
+0x0 - 14 bytes - IllusionMagic project header [56 4F 49 44 5F 50 4F 57 45 52 5F 4B 30 4C]
+0xE - 1 byte - IM project version number
+0xF - 1 byte - IM version number project was created with
+0x10 - XX MB - Start of data for each 16x16 map for each block and its textures.  Data is 8-bit RGBA ordered as follows - Header, Texture & Opacity Map, Metallic & Emissive & Roughness Map, Normal/Height Map - in order of pre-flattening (1.13) block IDs.  Blocks added in 1.13 and beyond are added on to the end, starting from 466 (Music Discs with IDs 2256-2267 are brought down to be in line with rest of IDs)
+0x8CA000 - XX KB - Start of resource pack manifest data
+0xXXXXXX - 16 bytes - IM project footer [54 57 49 4E 5F 4D 4F 4F 4E 5F 53 54 55 44 49 4F]
+
+Block Header Format -
+
+16 bytes long
+
+Bit 0 - Indicates if a block uses a height map instead of a normal map
+
+All other bits are unused and reserved
