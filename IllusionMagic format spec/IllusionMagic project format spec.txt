@@ -1,0 +1,39 @@
+Illusion Magic Project Format Specification
+
+Revision - v1
+Author - Kirby0Louise
+
+
+
+[Project Name].mrm
+
+Address - Size - Variable Name - Description
+
+//Project Metadata Header
+0x0 - 0x1 - VER_NUM - Illusion Magic Version Number
+0x1 - 0x1 - MC_MAJOR_VERSION - Minecraft major version for this project
+0x2 - 0x1 - MC_MINOR_VERSION - Minecraft major version for this project
+0x3 - 0x1 - MC_BUILD_VERSION - Minecraft build version for this project
+0x4 - 0x8 - MAGIC - "MAGIC_IM" magic constant and header EOF
+0xC - 0x4 - NULL - Zero fill
+
+
+
+
+[Project Name].mrt
+
+Address - Size - Variable Name - Description
+
+//Project Data Bank
+0x0 - 0x800 - TEXTUREDATA[X] - Texture data bank for block ID [X]
+
+//Texture Data Bank
+0x0 - 0x100 - R_CHANNEL - Red channel 16x16 matrix
+0x100 - 0x100 - G_CHANNEL - Green channel 16x16 matrix
+0x200 - 0x100 - B_CHANNEL - Blue channel 16x16 matrix
+0x300 - 0x100 - A_CHANNEL - Alpha channel 16x16 matrix
+0x400 - 0x100 - MET_CHANNEL - Metallic channel 16x16 matrix
+0x500 - 0x100 - EM_CHANNEL - Emissive channel 16x16 matrix
+0x600 - 0x100 - ROUGH_CHANNEL - Roughness channel 16x16 matrix
+0x700 - 0x100 - NORMALHEIGHT_CHANNEL - Normal/Height channel 16x16 matrix
+
